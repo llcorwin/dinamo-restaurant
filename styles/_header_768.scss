@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+    
+        &__contacts {
+            margin-right: 100px;
+        }
+    
+        &__social-item:nth-child(2) {
+            margin-left: 6px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color:#fff;
+        }
+    }
+
+}

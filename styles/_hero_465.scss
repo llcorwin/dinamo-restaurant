@@ -1,0 +1,34 @@
+@media (max-width: 425px) {
+    
+    .hero {
+        background-image: url(../images/mobbg-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    
+        &__caption {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+            max-width: 355px;
+            margin-bottom: 20px;
+        }
+    
+        &__desc {
+            margin-bottom: 30px;
+            color: #FFFFFF;
+            max-width: 355px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center; 
+        }
+    
+        &__box {
+            margin: auto;
+        }
+    }
+}
+

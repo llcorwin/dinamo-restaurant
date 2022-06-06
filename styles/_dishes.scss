@@ -1,0 +1,49 @@
+.dishes {
+    &__hero {
+        background-image: url(../images/bg-dishes.jpg);
+        /* додали картинку */
+        
+        background-repeat: no-repeat;
+        /* властивість щоб картинка не повторялась */
+        background-size: cover;
+        /* властивість щоб картинка займала весь простір */
+        background-position: 50% 50%;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__card {
+        margin-right: 30px;
+        text-align: center;
+    }  
+    
+    &__card:nth-child(1) {
+        margin-left: 236px;
+    }
+
+    &__card:nth-child(3) {
+        margin-right: 206px;
+    }
+    
+
+    &__img  {
+        width: 287px;
+        height: 287px; 
+        object-fit: cover;
+        border-radius: 50%;
+ 
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+    }
+}
+

@@ -1,0 +1,451 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  /* основний шрифт краще вибирати той який найчастіше зустрічається! */
+  /* по дефолту font style , font weight normal i 400 */
+  color: rgba(0, 0, 0, 0.6);
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  /* на макеті додали 360+360+360 + відступи 30+30, також ми додаємо +30, бо є падінги по 15, щоб тест вміщався в контейнер */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #B82121;
+  background-color: #B82121;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 20px 48px 19px;
+  text-align: center;
+  width: 229px;
+  height: 60px;
+  font-weight: 900;
+  margin-top: 35px;
+}
+.btn:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transition: 0.3s;
+}
+
+.btn__sm {
+  display: inline-block;
+  border: 1px solid #B82121;
+  background-color: #B82121;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 20px 34px 18px;
+  text-align: center;
+  width: 239px;
+  height: 60px;
+  font-weight: 900;
+  margin-top: 60px;
+}
+.btn__sm:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transition: 0.3s;
+}
+
+.hero {
+  background-image: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.hero__wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero__content {
+  flex-grow: 1;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.hero__caption {
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #fff;
+  max-width: 607px;
+  margin-bottom: 25px;
+}
+.hero__content {
+  flex-grow: 1;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.hero__desc {
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  max-width: 501px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.hero__span {
+  color: #B82121;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.header__logo {
+  line-height: 0;
+}
+.header__logo-img {
+  max-width: 133px;
+  max-height: 66px;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  padding: 0 30px;
+}
+.header__link {
+  color: #fff;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 16px;
+  position: relative;
+}
+.header__link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.header__link:hover::after {
+  width: 100%;
+}
+.header__social {
+  display: flex;
+  justify-content: space-between;
+}
+.header__social-item {
+  margin-right: 15px;
+  line-height: 0;
+}
+.header__social-item:nth-child(2) {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+}
+.header__social-link {
+  display: block;
+  color: #fff;
+}
+.header__social-link:nth-child(2) {
+  color: #fff;
+}
+.header__social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.dishes__hero {
+  background-image: url(../images/bg-dishes.jpg);
+  /* додали картинку */
+  background-repeat: no-repeat;
+  /* властивість щоб картинка не повторялась */
+  background-size: cover;
+  /* властивість щоб картинка займала весь простір */
+  background-position: 50% 50%;
+}
+.dishes__wrap {
+  display: flex;
+  align-items: center;
+}
+.dishes__card {
+  margin-right: 30px;
+  text-align: center;
+}
+.dishes__card:nth-child(1) {
+  margin-left: 236px;
+}
+.dishes__card:nth-child(3) {
+  margin-right: 206px;
+}
+.dishes__img {
+  width: 287px;
+  height: 287px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.dishes__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.box-head__caption {
+  font-family: Noto Sans, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #fff;
+  max-width: 517px;
+  padding-top: 72px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+.box-head__desc {
+  max-width: 632px;
+  margin: 0 auto;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.btn-sm__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .header__item {
+    padding: 0 10px;
+  }
+  .header__social-item {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 1024px) {
+  .dishes__card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__contacts {
+    margin-right: 100px;
+  }
+  .header__social-item:nth-child(2) {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+@media (max-width: 425px) {
+  .header__logo-img {
+    max-width: 111px;
+    max-height: 56px;
+    margin-right: 59px;
+  }
+  .header__social-item:nth-child(2) {
+    display: none;
+  }
+  .header__social-item {
+    margin-right: 20px;
+  }
+  .header__btn-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+  .header__line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+  }
+  .header__line:nth-child(1) {
+    top: 0;
+  }
+  .header__line:nth-child(2) {
+    top: 9px;
+  }
+  .header__line:nth-child(3) {
+    top: 18px;
+  }
+  .header__btn-menu--open.header__line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__btn-menu--open .header__line:nth-child(2) {
+    display: none;
+  }
+  .header__btn-menu--open .header__line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  .header__nav--open {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% - 210px);
+    background-color: #000;
+    border-radius: 5px;
+  }
+  .header__list {
+    display: block;
+    min-width: 140px;
+  }
+  .header__item {
+    padding: 0;
+  }
+  .header__link {
+    display: block;
+    padding: 4px 15px;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    background-image: url(../images/mobbg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .hero__caption {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    max-width: 355px;
+    margin-bottom: 20px;
+  }
+  .hero__desc {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    max-width: 355px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .hero__box {
+    margin: auto;
+  }
+}
+.btn {
+  margin: 30px 73px 150px;
+}
+
+@media (max-width: 375px) {
+  .header__logo-img {
+    max-width: 91px;
+    max-height: 40px;
+    margin-right: 85px;
+  }
+  .header__btn-menu {
+    margin-left: 15px;
+  }
+  .header__social-item {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__caption {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .hero__desc {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .hero__box {
+    max-width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .btn {
+    margin: 20px 43px 150px;
+  }
+}
+@media (max-width: 320px) {
+  .header__logo-img {
+    max-width: 85px;
+    max-height: 40px;
+    margin-right: 55px;
+  }
+}
+@media (max-width: 320px) {
+  .hero__box {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .btn {
+    margin: 15px 35px 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.box-head {
+
+    &__caption {
+        font-family: Noto Sans, Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        line-height: 70px;
+        font-weight: 900;
+        color: #fff;
+        max-width: 517px;
+        padding-top: 72px;
+        padding-bottom: 25px;
+        margin: 0 auto;
+    }
+
+    &__desc {
+        max-width: 632px;
+        margin: 0 auto;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+
+

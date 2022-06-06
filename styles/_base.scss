@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    /* основний шрифт краще вибирати той який найчастіше зустрічається! */
+    /* по дефолту font style , font weight normal i 400 */
+    color: rgba(0, 0, 0, 0.6);
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    /* на макеті додали 360+360+360 + відступи 30+30, також ми додаємо +30, бо є падінги по 15, щоб тест вміщався в контейнер */
+    margin: 0 auto;
+    padding: 0 15px;
+}
