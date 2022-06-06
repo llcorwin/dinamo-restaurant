@@ -13,23 +13,17 @@
     &__wrap {
         display: flex;
         align-items: center;
+        margin: -15px;
     }
 
 
     &__card {
-        margin-right: 30px;
+        padding: 15px;
         text-align: center;
+        width: 33.33%;
+
     }  
     
-    &__card:nth-child(1) {
-        margin-left: 236px;
-    }
-
-    &__card:nth-child(3) {
-        margin-right: 206px;
-    }
-    
-
     &__img  {
         width: 287px;
         height: 287px; 
@@ -44,6 +38,7 @@
         line-height: 25px;
         text-align: center;
         color: #fff;
+        margin-top: 40px;
     }
 }
 
