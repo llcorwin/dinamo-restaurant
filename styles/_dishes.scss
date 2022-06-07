@@ -42,3 +42,39 @@
     }
 }
 
+
+@media (max-width: 1024px){
+    .dishes {
+
+        &__wrap {
+            flex-direction: column;
+        }
+        &__card {
+            width: 100%;
+        }   
+    }
+}
+
+@media (max-width: 425px){
+    .btn__sm {
+        display: none;
+    }
+
+    .box-head {
+
+        &__caption {
+            font-family: Noto Sans, Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 900;
+            color: #fff;
+            max-width: 302px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            margin: 0 auto;
+        }
+    }
+
+
+
+}

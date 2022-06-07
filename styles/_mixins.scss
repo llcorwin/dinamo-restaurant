@@ -1,0 +1,13 @@
+@mixin border($width, $color) {
+    border: $width solid $color;   
+}
+
+
+@mixin flex-row($gap) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gap;
+    
+}

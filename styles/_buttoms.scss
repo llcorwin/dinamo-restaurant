@@ -23,7 +23,7 @@
 .btn__sm {
     display: inline-block;
     border: 1px solid #B82121;
-    background-color: #B82121;
+    background-color: $color_red;
     border-radius: 5px;
     color: #fff;
     font-size: 14px;
@@ -39,5 +39,26 @@
         background-color: transparent;
         border-color: #fff;
         transition: .3s;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .btn {
+        margin: 30px 73px 150px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .btn {
+        margin: 20px 43px 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        margin: 15px 35px 100px;
     }
 }

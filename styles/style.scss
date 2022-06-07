@@ -1,3 +1,5 @@
+@import './variables';
+@import './mixins';
 @import './base';
 @import './buttoms';
 @import './hero';
@@ -5,16 +7,4 @@
 @import './dishes';
 @import './box-head';
 @import './btn__sm-wrap';
-@import './header_1024';
-@import "./dishes_1024";
-@import './header_768';
-@import './header_465';
-@import './hero_465';
-@import './btn_465';
-@import "./dishes_425";
-@import './header_375';
-@import './hero_375';
-@import './btn_375';
-@import './header_320';
-@import './hero_320';
-@import './btn_320';
+
