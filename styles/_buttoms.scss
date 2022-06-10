@@ -1,7 +1,7 @@
 .btn {
     display: inline-block;
     border: 1px solid #B82121;
-    background-color: #B82121;
+    // background-color: #B82121;
     border-radius: 5px;
     color: #fff;
     font-size: 14px;
@@ -18,29 +18,20 @@
         border-color: #fff;
         transition: .3s;
     }
-}
 
-.btn__sm {
-    display: inline-block;
-    border: 1px solid #B82121;
-    background-color: $color_red;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 19px;
-    padding: 20px 34px 18px;
-    text-align: center;
-    width: 239px;
-    height: 60px;
-    font-weight: 900;
-    margin-top: 60px;
+    &__sm {
+        @extend .btn;
+        background-color: #B82121;
+        padding: 20px 34px 18px;
+        width: 239px;
+        height: 60px;
+        margin-top: 60px;
+        // transform: rotate(45deg);
+        // transform: scale(2.3);
 
-    &:hover {
-        background-color: transparent;
-        border-color: #fff;
-        transition: .3s;
     }
 }
+
 
 @media (max-width: 425px) {
 
